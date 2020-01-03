@@ -3,8 +3,6 @@
   --color-secondary: #dbead5;
   --black: #111;
   --white: #fefefe;
-
-  --section-padding: 5rem;
 }
 
 *,
@@ -28,6 +26,8 @@ body {
   grid-template-rows: minmax(30%, max-content) 5rem 1fr auto;
   grid-template-areas: 'header' 'cta' 'content' 'footer';
   background-color: var(--color-secondary);
+
+  --section-padding: 2rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -35,6 +35,8 @@ body {
     grid-template-areas: 'header cta content';
     grid-template-rows: 100%;
     grid-template-columns: 45vw 10vw 45vw;
+
+  --section-padding: 5rem;
   }
 }
 
@@ -49,7 +51,7 @@ body > header {
   justify-content: center;
   align-items: center;
 
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -63,6 +65,7 @@ body > main {
   padding: var(--section-padding);
   background-color: var(--color-secondary);
   color: var(--black);
+  -webkit-hyphens: auto;
   hyphens: auto;
   display: flex;
   flex-direction: column;
@@ -143,7 +146,7 @@ header h1 {
 }
 
 header h2 {
-  font-size: 2.2em;
+  font-size: 2em;
   line-height: 1;
   font-weight: 500;
   letter-spacing: 0.1ch;
@@ -153,6 +156,12 @@ header h2 {
 h2.subline {
   font-weight: 400;
   font-size: 1.1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  header h2 {
+    font-size: 2.2em;
+  }
 }
 
 .content {
