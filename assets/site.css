@@ -167,6 +167,7 @@ a {
   position: relative;
   text-decoration: none;
   color: var(--color-primary);
+  white-space: nowrap;
 }
 
 a:not(.cta-button--contact):before {
