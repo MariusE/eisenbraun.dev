@@ -25,7 +25,7 @@ body {
 
 body {
   display: grid;
-  grid-template-rows: minmax(30%, max-content) auto 1fr auto;
+  grid-template-rows: minmax(30%, max-content) 5rem 1fr auto;
   grid-template-areas: 'header' 'cta' 'content' 'footer';
   background-color: var(--color-secondary);
 }
