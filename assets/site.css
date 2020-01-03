@@ -11,7 +11,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Avenir Next', 'Roboto sans', Avenir, Arial, Helvetica, sans-serif;
+  font-family: 'Avenir Next', 'Roboto sans', Avenir, Arial, Helvetica,
+    sans-serif;
 }
 
 html,
@@ -30,13 +31,17 @@ body {
   --section-padding: 2rem;
 }
 
+@media screen and (min-width: 700px) {
+  body {
+    --section-padding: 5rem;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   body {
     grid-template-areas: 'header cta content';
     grid-template-rows: 100%;
     grid-template-columns: 45vw 10vw 45vw;
-
-  --section-padding: 5rem;
   }
 }
 
@@ -62,16 +67,16 @@ body > header {
 
 body > main {
   grid-area: content;
-  padding: var(--section-padding);
-  background-color: var(--color-secondary);
-  color: var(--black);
-  -webkit-hyphens: auto;
-  hyphens: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: var(--section-padding);
+  background-color: var(--color-secondary);
+  color: var(--black);
   font-size: 1.2rem;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 body > footer {
@@ -142,13 +147,13 @@ body > footer {
 
 header h1 {
   font-size: 1.3em;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 header h2 {
-  font-size: 2em;
+  font-size: 1.98em;
   line-height: 1;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.1ch;
   margin-bottom: 1rem;
 }
@@ -156,11 +161,16 @@ header h2 {
 h2.subline {
   font-weight: 400;
   font-size: 1.1rem;
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
   header h2 {
     font-size: 2.2em;
+  }
+
+  header h2.subline {
+    display: block;
   }
 }
 
