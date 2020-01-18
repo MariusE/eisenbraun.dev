@@ -101,8 +101,8 @@ body > footer {
   display: block;
   height: 100%;
   background-color: var(--color-primary);
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%);
+  -webkit-clip-path: polygon(-1% -1%, 101% -1%, 101% -1%, -1% 101%);
+  clip-path: polygon(-1% -1%, 101% -1%, 101% -1%, -1% 101%);
 }
 
 .divider--diagonal {
