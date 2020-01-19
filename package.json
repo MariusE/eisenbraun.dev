@@ -1,0 +1,15 @@
+{
+  "name": "eisenbraun.dev",
+  "version": "0.0.1",
+  "repository": "https://github.com/MariusE/eisenbraun.dev.git",
+  "author": "Marius Eisenbraun <kontakt@marius-eisenbraun.de>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --watch",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
+}
