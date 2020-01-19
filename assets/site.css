@@ -148,14 +148,18 @@ body > footer {
 header h1 {
   font-size: 1.3em;
   font-weight: 400;
+  text-align: center;
 }
 
-header h2 {
+header h2:first-of-type {
   font-size: 1.98em;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 0.1ch;
   margin-bottom: 1rem;
+  letter-spacing: 6px;
+  white-space: nowrap;
+  text-align: center;
 }
 
 h2.subline {
@@ -164,9 +168,18 @@ h2.subline {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
-  header h2 {
-    font-size: 2.2em;
+@media screen and (min-width: 700px) {
+  h1 {
+    text-align-last: left;
+  }
+  
+  header h2:first-child {
+    text-align: left;
+    letter-spacing: 6px;
+  }
+
+  header h2 > span:first-child {
+    letter-spacing: 10.4px;
   }
 
   header h2.subline {
